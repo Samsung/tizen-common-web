@@ -8,7 +8,10 @@ window.onload = () => {
     updateInformation('firmware', getFirmware());
     updateInformation('duid', getDuid());
     updateInformation('modelcode', getModelCode());
-    updateInformation('screen', getCapability('http://tizen.org/feature/screen'))
+    updateInformation(
+        'screen',
+        getCapability('http://tizen.org/feature/screen')
+    );
 };
 
 function updateInformation(id, content) {

@@ -1,0 +1,15 @@
+{
+  "connectionInfo": {
+    "deviceIp": "10.88.106.197",
+    "socketPort": 2515,
+    "width": "1920",
+    "isDebugMode": true,
+    "hostIp": "10.88.106.190"
+  },
+  "profileInfo": {
+    "path": "C:/tizen-studio-data/profile/profiles.xml"
+  },
+  "optionalInfo": {
+    "proxyServer": "http://168.219.61.252:8080"
+  }
+}
