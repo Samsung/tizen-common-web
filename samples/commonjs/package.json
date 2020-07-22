@@ -31,6 +31,6 @@
     },
     "dependencies": {
         "@tizentv/tizen-tv-webapis": "latest",
-        "@tizentv/tizen-common-web": "latest"
+        "tizen-common-web": "file:../.."
     }
 }
