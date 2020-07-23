@@ -1,6 +1,6 @@
 {
     "name": "tizen-common-web",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "This package is for supporting Tizen Web Device API as commonjs style.",
     "main": "index.js",
     "scripts": {

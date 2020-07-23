@@ -1,6 +1,6 @@
-# @tizentv/tizen-common-web
+# tizen-common-web
 
-`@tizentv/tizen-common-web` package is for supporting [Tizen Web Device API](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references.html) as `commonjs` style.
+`tizen-common-web` package is for supporting [Tizen Web Device API](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references.html) as `commonjs` style.
 Now we are supporting it for Typescript developers.
 Please note that, In order to use this pacakge, `@types/tizen-common-web` is required.
 
@@ -24,12 +24,12 @@ Please note that, In order to use this pacakge, `@types/tizen-common-web` is req
 -   Common js
 
 ```sh
-npm install @tizentv/tizen-common-web
+npm install tizen-common-web
 ```
 
 ```js
 // js
-import { systeminfo } from '@tizentv/tizen-common-web';
+import { systeminfo } from 'tizen-common-web';
 const { getCapability } = systeminfo;
 
 getCapability('http://tizen.org/feature/screen');
@@ -38,13 +38,13 @@ getCapability('http://tizen.org/feature/screen');
 -   Typescript
 
 ```sh
-npm install @tizentv/tizen-common-web
+npm install tizen-common-web
 npm install @types/tizen-common-web
 ```
 
 ```ts
 // ts
-import { systeminfo } from '@tizentv/tizen-common-web';
+import { systeminfo } from 'tizen-common-web';
 const { getCapability } = systeminfo;
 
 getCapability('http://tizen.org/feature/screen');
