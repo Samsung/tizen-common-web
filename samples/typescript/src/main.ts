@@ -1,5 +1,5 @@
-import { productinfo, appcommon } from '@tizentv/tizen-tv-webapis';
-import { systeminfo } from '@tizentv/tizen-common-web';
+import { productinfo, appcommon } from 'tizen-tv-webapis';
+import { systeminfo } from 'tizen-common-web';
 
 const { getFirmware, getDuid, getModelCode } = productinfo;
 const { setScreenSaver, AppCommonScreenSaverState } = appcommon;

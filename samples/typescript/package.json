@@ -28,12 +28,12 @@
         "ts-loader": "^6.2.1",
         "typescript": "^3.6.4",
         "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.11"
-    },
-    "dependencies": {
-        "@tizentv/tizen-tv-webapis": "latest",
-        "@tizentv/tizen-common-web": "latest",
+        "webpack-cli": "^3.3.11",
         "@types/tizen-tv-webapis": "file:../../../types-tizen-tv-webapis",
         "@types/tizen-common-web": "file:../../../types-tizen-common-web"
+    },
+    "dependencies": {
+        "tizen-tv-webapis": "latest",
+        "tizen-common-web": "file:../.."
     }
 }

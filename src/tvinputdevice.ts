@@ -1,6 +1,6 @@
 const { tvinputdevice } = window.tizen;
 
-const {
+export const {
     getSupportedKeys,
     getKey,
     registerKey,
@@ -8,12 +8,3 @@ const {
     registerKeyBatch,
     unregisterKeyBatch
 } = tvinputdevice;
-
-module.exports = {
-    getSupportedKeys,
-    getKey,
-    registerKey,
-    unregisterKey,
-    registerKeyBatch,
-    unregisterKeyBatch
-};

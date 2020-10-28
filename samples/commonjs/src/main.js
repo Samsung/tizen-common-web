@@ -1,5 +1,5 @@
 import { productinfo } from '@tizentv/tizen-tv-webapis';
-import { systeminfo } from '@tizentv/tizen-common-web';
+import { systeminfo } from 'tizen-common-web';
 
 const { getFirmware, getDuid, getModelCode } = productinfo;
 const { getCapability } = systeminfo;
