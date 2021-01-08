@@ -319,16 +319,37 @@ export enum ZPosition {
 }
 export const {
     tizen,
+    account,
+    alarm,
     application,
+    archive,
+    content,
+    datacontrol,
     download,
+    exif,
     filesystem,
+    iotcon,
+    keymanager,
+    mediacontroller,
+    messageport,
+    push,
     systeminfo,
+    time,
     tvaudiocontrol,
     tvdisplaycontrol,
     tvinfo,
     tvinputdevice,
     tvwindow,
-    websetting
+    voicecontrol,
+    websetting,
+    ApplicationControl,
+    ApplicationControlData,
+    AttributeFilter,
+    AttributeRangeFilter,
+    Bundle,
+    CompositeFilter,
+    SimpleCoordinates,
+    SortMode
 } = window.tizen;
 
 const pkg = window.tizen.package;
