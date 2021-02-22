@@ -32,7 +32,7 @@
     },
     "dependencies": {
         "tizen-tv-webapis": "latest",
-        "tizen-common-web": "file:../..",
+        "tizen-common-web": "latest",
         "@types/tizen-tv-webapis": "latest",
         "@types/tizen-common-web": "latest"
     }
