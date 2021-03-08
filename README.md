@@ -63,6 +63,31 @@ const { getCapability } = systeminfo;
 getCapability('http://tizen.org/feature/screen');
 ```
 
+## Enum usage
+
+### v1.0.0
+
+Modules were separated. Enums must have been imported from the each modules. Enum values were accessible either SystemInfoPropertyId.LOCALE or 'LOCALE'.
+
+```ts
+import { systeminfo } from 'tizen-common-web';
+import { SystemInfoPropertyId } from 'tizen-common-web/systeminfo';
+const { getCount } = systeminfo;
+
+getCount(SystemInfoPropertyId.LOCALE);
+```
+
+### v2.0.0
+
+Modules have been integrated in index.d.ts. Enum values have to be accessed as a direct string value. (ex. 'LOCALE')
+
+```ts
+import { systeminfo } from 'tizen-common-web';
+const { getCount } = systeminfo;
+
+getCount('LOCALE');
+```
+
 ## Samples
 
 We offer two samples for common js and typescript.
