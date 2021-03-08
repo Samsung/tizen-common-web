@@ -1,6 +1,6 @@
-# @tizentv/tizen-common-web
+# tizen-common-web
 
-`@tizentv/tizen-common-web` package is for supporting [Tizen Web Device API](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references.html) as `commonjs` style.
+`tizen-common-web` package is for supporting [Tizen Web Device API](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references.html) as `commonjs` style.
 Now we are supporting it for Typescript developers.
 Please note that, In order to use this pacakge, `@types/tizen-common-web` is required.
 
@@ -18,18 +18,31 @@ Please note that, In order to use this pacakge, `@types/tizen-common-web` is req
 -   [TVInfo](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvinfo-api.html)
 -   [TVInputDevice](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvinputdevice-api.html)
 -   [TVWindow](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvwindow-api.html)
+-   [VoiceControl](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/voicecontrol.html)
+-   [Time](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/time.html)
+-   [Push](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/push.html)
+-   [MessagePort](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/messageport.html)
+-   [MediaController](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/mediacontroller.html)
+-   [KeyManager](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/keymanager.html)
+-   [Iotcon](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/iotcon.html)
+-   [Exif](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/exif.html)
+-   [DataControl](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/datacontrol.html)
+-   [Content](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/content.html)
+-   [Archive](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/archive.html)
+-   [Alarm](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/alarm.html)
+-   [Account](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/account.html)
 
 ## How to use
 
 -   Common js
 
 ```sh
-npm install @tizentv/tizen-common-web
+npm install tizen-common-web
 ```
 
 ```js
 // js
-import { systeminfo } from '@tizentv/tizen-common-web';
+const systeminfo = require('tizen-common-web');
 const { getCapability } = systeminfo;
 
 getCapability('http://tizen.org/feature/screen');
@@ -38,16 +51,41 @@ getCapability('http://tizen.org/feature/screen');
 -   Typescript
 
 ```sh
-npm install @tizentv/tizen-common-web
+npm install tizen-common-web
 npm install @types/tizen-common-web
 ```
 
 ```ts
 // ts
-import { systeminfo } from '@tizentv/tizen-common-web';
+import { systeminfo } from 'tizen-common-web';
 const { getCapability } = systeminfo;
 
 getCapability('http://tizen.org/feature/screen');
+```
+
+## Enum usage
+
+### v1.0.0
+
+Modules were separated. Enums must have been imported from the each modules. Enum values were accessible either SystemInfoPropertyId.LOCALE or 'LOCALE'.
+
+```ts
+import { systeminfo } from 'tizen-common-web';
+import { SystemInfoPropertyId } from 'tizen-common-web/systeminfo';
+const { getCount } = systeminfo;
+
+getCount(SystemInfoPropertyId.LOCALE);
+```
+
+### v2.0.0
+
+Modules have been integrated in index.d.ts. Enum values have to be accessed as a direct string value. (ex. 'LOCALE')
+
+```ts
+import { systeminfo } from 'tizen-common-web';
+const { getCount } = systeminfo;
+
+getCount('LOCALE');
 ```
 
 ## Samples
