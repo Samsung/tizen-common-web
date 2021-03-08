@@ -18,6 +18,19 @@ Please note that, In order to use this pacakge, `@types/tizen-common-web` is req
 -   [TVInfo](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvinfo-api.html)
 -   [TVInputDevice](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvinputdevice-api.html)
 -   [TVWindow](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvwindow-api.html)
+-   [VoiceControl](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/voicecontrol.html)
+-   [Time](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/time.html)
+-   [Push](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/push.html)
+-   [MessagePort](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/messageport.html)
+-   [MediaController](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/mediacontroller.html)
+-   [KeyManager](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/keymanager.html)
+-   [Iotcon](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/iotcon.html)
+-   [Exif](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/exif.html)
+-   [DataControl](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/datacontrol.html)
+-   [Content](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/content.html)
+-   [Archive](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/archive.html)
+-   [Alarm](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/alarm.html)
+-   [Account](https://docs.tizen.org/application/web/api/6.0/device_api/mobile/tizen/account.html)
 
 ## How to use
 
@@ -29,7 +42,7 @@ npm install tizen-common-web
 
 ```js
 // js
-import { systeminfo } from 'tizen-common-web';
+const systeminfo = require('tizen-common-web');
 const { getCapability } = systeminfo;
 
 getCapability('http://tizen.org/feature/screen');
